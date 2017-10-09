@@ -1,0 +1,12 @@
+ext {
+    versions = [
+            butterknifeVersion    : '8.8.1',
+            daggerVersion         : '2.11'
+    ]
+    libraries= [
+            butterknife             : "com.jakewharton:butterknife:$versions.butterknifeVersion",
+            butterknifeCompiler     : "com.jakewharton:butterknife-compiler:$versions.butterknifeVersion",
+            dagger                  : "com.google.dagger:dagger:$versions.daggerVersion",
+            daggerCompiler          : "com.google.dagger:dagger-compiler:$versions.daggerVersion"
+    ]
+}
