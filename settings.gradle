@@ -1,1 +1,1 @@
-include ':app', ':persistence', ':login', ':loginnavigator'
+include ':app', ':persistence', ':login', ':login-navigator'
