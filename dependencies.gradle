@@ -5,12 +5,16 @@ ext {
             minSdk            : 19,
             targetSdk         : 26,
             butterknifeVersion: '8.8.1',
-            daggerVersion     : '2.11'
+            daggerVersion     : '2.11',
+            supportLib        : '26.1.0',
+            constraintLayout  : '1.0.2'
     ]
     libraries = [
             butterknife        : "com.jakewharton:butterknife:$versions.butterknifeVersion",
             butterknifeCompiler: "com.jakewharton:butterknife-compiler:$versions.butterknifeVersion",
             dagger             : "com.google.dagger:dagger:$versions.daggerVersion",
-            daggerCompiler     : "com.google.dagger:dagger-compiler:$versions.daggerVersion"
+            daggerCompiler     : "com.google.dagger:dagger-compiler:$versions.daggerVersion",
+            appcompatV7        : "com.android.support:appcompat-v7:$versions.supportLib",
+            constraintLayout   : "com.android.support.constraint:constraint-layout:$versions.constraintLayout"
     ]
 }

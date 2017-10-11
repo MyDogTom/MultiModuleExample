@@ -29,8 +29,8 @@ dependencies {
     compile project(":base-app")
     compile project(":user-details-navigator")
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:26.1.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile libraries.appcompatV7
+    compile libraries.constraintLayout
     testCompile 'junit:junit:4.12'
     compile libraries.dagger
     kapt libraries.daggerCompiler
