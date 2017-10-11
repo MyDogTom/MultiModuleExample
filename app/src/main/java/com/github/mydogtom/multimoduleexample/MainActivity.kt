@@ -15,9 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         ButterKnife.bind(this)
-        DaggerApplicationComponent.builder()
-                .build()
-                .inject(this)
+        DaggerMainActivityComponent.builder().build().inject(this)
     }
 
 

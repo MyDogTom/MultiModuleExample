@@ -4,8 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MultiModuleExample.iml" filepath="$PROJECT_DIR$/MultiModuleExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-app/base-app.iml" filepath="$PROJECT_DIR$/base-app/base-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/login/login.iml" filepath="$PROJECT_DIR$/login/login.iml" />
-      <module fileurl="file://$PROJECT_DIR$/login-navigator/loginnavigator.iml" filepath="$PROJECT_DIR$/login-navigator/loginnavigator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/login-navigator/login-navigator.iml" filepath="$PROJECT_DIR$/login-navigator/login-navigator.iml" />
       <module fileurl="file://$PROJECT_DIR$/persistence/persistence.iml" filepath="$PROJECT_DIR$/persistence/persistence.iml" />
     </modules>
   </component>
