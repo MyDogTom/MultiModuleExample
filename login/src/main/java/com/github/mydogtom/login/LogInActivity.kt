@@ -8,7 +8,7 @@ import com.github.mydogtom.baseapp.loggedOutComponent
 import com.github.mydogtom.userdetailsnavigator.UserDetailsNavigator
 import javax.inject.Inject
 
-class LogInActivity : AppCompatActivity() {
+class LogInActivity : AppCompatActivity(), LogInView {
     @Inject lateinit var presenter: LoginPresenter
     @Inject lateinit var userDetailsNavigator: UserDetailsNavigator
     private val logInButton by lazy {
@@ -23,13 +23,17 @@ class LogInActivity : AppCompatActivity() {
         setContentView(R.layout.activity_log_in)
 
         DaggerLoginComponent.builder()
+                .loginView(this)
                 .loggedOutComponent(this.loggedOutComponent())
                 .build()
                 .inject(this)
 
         logInButton.setOnClickListener {
             presenter.performLogIn(userNameEditText.text.toString())
-            userDetailsNavigator.openUserDetails(this)
         }
+    }
+
+    override fun navigateToUserDetails() {
+        userDetailsNavigator.openUserDetails(this)
     }
 }
