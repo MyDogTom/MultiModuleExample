@@ -1,16 +1,15 @@
-apply from:'../dependencies.gradle'
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+apply from:'../dependencies.gradle'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildToolsVersion
     defaultConfig {
         applicationId "com.github.mydogtom.multimoduleexample"
-        minSdkVersion 19
-        targetSdkVersion 26
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
