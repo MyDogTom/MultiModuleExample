@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/login/login.iml" filepath="$PROJECT_DIR$/login/login.iml" />
       <module fileurl="file://$PROJECT_DIR$/login-navigator/login-navigator.iml" filepath="$PROJECT_DIR$/login-navigator/login-navigator.iml" />
       <module fileurl="file://$PROJECT_DIR$/persistence/persistence.iml" filepath="$PROJECT_DIR$/persistence/persistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-details/user-details.iml" filepath="$PROJECT_DIR$/user-details/user-details.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user-details-navigator/user-details-navigator.iml" filepath="$PROJECT_DIR$/user-details-navigator/user-details-navigator.iml" />
     </modules>
   </component>
 </project>

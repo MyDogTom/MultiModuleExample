@@ -2,7 +2,7 @@ package com.github.mydogtom.login
 
 import com.github.mydogtom.baseapp.FeatureScope
 import com.github.mydogtom.baseapp.LoggedOutComponent
-import com.github.mydogtom.persistence.Storage
+import com.github.mydogtom.persistence.UserRepository
 import dagger.Component
 import dagger.Module
 import dagger.Provides
@@ -18,5 +18,5 @@ interface LoginComponent {
 @Module
 class LoginModule {
     @Provides
-    fun provideLoginPresenter(storage: Storage) = LoginPresenter(storage)
+    fun provideLoginPresenter(repository: UserRepository) = LoginPresenter(repository)
 }

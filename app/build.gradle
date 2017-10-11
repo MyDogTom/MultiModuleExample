@@ -24,11 +24,12 @@ android {
 }
 
 dependencies {
+    compile project(':login-navigator')
+    compile project(":login")
+    compile project(":user-details")
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:26.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile project(':login-navigator')
-    compile project(":login")
     testCompile 'junit:junit:4.12'
     compile libraries.butterknife
     kapt libraries.butterknifeCompiler
