@@ -18,8 +18,8 @@ plugins {
     id "io.gitlab.arturbosch.detekt" version "1.0.0.RC4-3"
 }
 
-detekt{
-    profile("main"){
+detekt {
+    profile("main") {
         config = "$projectDir/detekt.yml"
     }
 }

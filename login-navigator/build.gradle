@@ -1,4 +1,4 @@
-apply from:'../dependencies.gradle'
+apply from: '../dependencies.gradle'
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
