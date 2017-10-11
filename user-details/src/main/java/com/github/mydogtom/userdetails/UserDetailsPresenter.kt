@@ -11,16 +11,11 @@ class UserDetailsPresenter @Inject constructor(private val userName: UserName,
                                                private val userRepository: UserRepository) {
     init {
         view.showData(userName)
-                view.showAddress(userRepository.getAddress())
+        view.showAddress(userRepository.getAddress())
     }
 
     fun save(address: String) {
         userRepository.setAddress(address)
 
     }
-//    fun setView(view: UserDetailsView) {
-//        this.view = view
-//        view.showData(user)
-//        view.showData(user)
-//    }
 }

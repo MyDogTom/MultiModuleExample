@@ -33,5 +33,6 @@ interface LoggedInComponentProvider {
     fun provideLoggedInComponent(): LoggedInComponent
 }
 
+@Suppress("UnsafeCast")
 fun Context.loggedInComponent() =
         (this.applicationContext as LoggedInComponentProvider).provideLoggedInComponent()

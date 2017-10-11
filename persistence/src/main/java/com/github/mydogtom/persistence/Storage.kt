@@ -3,7 +3,7 @@ package com.github.mydogtom.persistence
 class Storage {
     private val values = HashMap<String, Any>()
 
-    @Suppress("UNCHECKED_CAST")
+    @Suppress("UNCHECKED_CAST", "UnsafeCast")
     fun <T> getValue(key: String): T? = values[key] as T?
 
     fun putValue(key: String, value: Any) {

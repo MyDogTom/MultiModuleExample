@@ -7,7 +7,6 @@ import android.widget.EditText
 import android.widget.TextView
 import com.github.mydogtom.baseapp.loggedInComponent
 import com.github.mydogtom.persistence.UserName
-import kotlinx.android.synthetic.main.activity_user_details.*
 import javax.inject.Inject
 
 class UserDetailsActivity : AppCompatActivity(), UserDetailsView {
@@ -28,7 +27,6 @@ class UserDetailsActivity : AppCompatActivity(), UserDetailsView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user_details)
-        userNameTextView.text = "asdf"
         DaggerUserDetailsComponent.builder()
                 .loggedInComponent(this.loggedInComponent())
                 .userDetailsView(this)
@@ -41,7 +39,7 @@ class UserDetailsActivity : AppCompatActivity(), UserDetailsView {
     }
 
     override fun showAddress(address: String) {
-        edAddress.setText(address)
+        addressTextView.setText(address)
     }
 
 

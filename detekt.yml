@@ -1,0 +1,14 @@
+autoCorrect: false
+failFast: true
+
+comments:
+  UndocumentedPublicClass:
+    active: false
+  UndocumentedPublicFunction:
+    active: false
+
+potential-bugs:
+  LateinitUsage:
+    active: true
+    excludeAnnotatedProperties: 'Inject'
+    ignoreOnClassesPattern: ''

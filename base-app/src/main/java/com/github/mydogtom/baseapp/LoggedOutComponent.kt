@@ -32,5 +32,6 @@ interface LoggedOutComponentProvider {
     fun provideLoggedOutComponent(): LoggedOutComponent
 }
 
+@Suppress("UnsafeCast")
 fun Context.loggedOutComponent() =
         (this.applicationContext as LoggedOutComponentProvider).provideLoggedOutComponent()
