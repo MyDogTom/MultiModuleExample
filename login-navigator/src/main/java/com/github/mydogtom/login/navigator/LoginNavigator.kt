@@ -6,7 +6,8 @@ import android.net.Uri
 
 class LoginNavigator {
     fun openLogin(context: Context) {
-        val startActivityIntent = Intent(Intent.ACTION_VIEW, Uri.parse("s-urn://login"))
+        val path = context.getString(R.string.login_path)
+        val startActivityIntent = Intent(Intent.ACTION_VIEW, Uri.parse("s-urn://$path"))
         context.startActivity(startActivityIntent)
     }
 }

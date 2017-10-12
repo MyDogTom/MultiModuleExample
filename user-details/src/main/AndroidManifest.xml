@@ -8,7 +8,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:scheme="s-urn"
-                    android:host="user-details"/>
+                    android:host="@string/user_details_path" />
             </intent-filter>
         </activity>
     </application>

@@ -28,6 +28,7 @@ android {
 dependencies {
     compile project(":base-app")
     compile project(":user-details-navigator")
+    compile project(":login-navigator")
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile libraries.appcompatV7
     compile libraries.constraintLayout

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LoginNavigator</string>
+    <string name="login_path">login</string>
 </resources>

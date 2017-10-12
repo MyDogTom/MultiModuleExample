@@ -6,7 +6,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:scheme="s-urn"
-                    android:host="login"/>
+                    android:host="@string/login_path" />
             </intent-filter>
         </activity>
     </application>
