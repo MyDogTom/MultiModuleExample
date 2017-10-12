@@ -199,4 +199,6 @@ It seems that latest version not only faster but also "smarter". The difference 
  
  * It's not possible to user [ButterKnife](http://jakewharton.github.io/butterknife/) in library modules while using `kapt`. See [details](https://github.com/JakeWharton/butterknife/issues/974#issuecomment-307585969). But it's possible to use ButterKnife in library module when you are using Java (see [details](https://github.com/JakeWharton/butterknife#library-projects)).
  * Layout names should be unique across all modules. Let's say "main_actiity" layout is present in both `login`and `app` modules. In that case `LoginActivity` will use "main_activity" layout from `app` module instead of one from `login` module.
+ * `app` , top level module, should include all “screen” modules via compile project(":user-details"). Otherwise screen won’t be included into application at all and produce runtime error when we try to open it.
+ * Since resulting `AndroidManifest.xml` is merging result of all `AndroidManifest.xml` it’s possible declare `UserDetailsActivity` in `user-details` module and specify `parentActivityName` later in `AndroidManifest.xml` from app module.
  
